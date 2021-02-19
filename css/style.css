@@ -84,7 +84,7 @@ td{
   min-width: 125px;
   padding: 10px;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: middle; 
   text-transform: uppercase;
   background: #7e0820;
 }
@@ -97,8 +97,6 @@ td{
 
 /*Req 6d*/
 tr:nth-child(odd){
-  /* FIXME */
-  /* background-color: transparent; */
   background-color:rgba(0, 0, 0, 0)
 }
 /*Req 6e*/
