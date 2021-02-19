@@ -32,6 +32,12 @@ body{
   background-position: center;
 
   /*Req 1*/
+  font-family: 'Andika', sans-serif;
+  background-color: #DDDDDD;
+  background-image: url('../images/pigeon-background.JPEG');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1{
@@ -39,49 +45,96 @@ h1{
   font-size: 2em;
 
   /*Req 2*/
+  text-align: center;
+  line-height: 2;
 }
 
 p{
   /*Req 3*/
+  padding-top: 15px;
 }
 
 a{
   /*Req 4*/
+  font-size: 16px;
+  color: #c12258;
+  text-decoration: underline;
+  text-decoration-style: wavy;
 }
 
 /*Req 5*/
 /*Add selector and rule here*/
-
+*:focus {
+  border: 3px;
+  border-style: dashed;
+  border-color: #417243;
+}
 
 /*Req 6a*/
 td{
-  
+  text-align: center;
+  /* border-top: 2px; */
+  border-top: 2px solid #000000;
+  padding: 10px;
 }
 
 /*Req 6b*/
 .colhead{
   color: #FFFFFF;
-
+  min-width: 125px;
+  padding: 10px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  background: #c12258;
 }
 /*Req 6c*/
 .rowhead{
-
+  border-top: 2px solid #000000;
+  border-right: 2px solid #000000;
+  /* border-bottom: 2px solid #000000; */
 }
 
 /*Req 6d*/
+tr:nth-child(odd){
+  /* FIXME */
+  background-color: transparent;
+}
 /*Req 6e*/
+tr:nth-child(odd){
+  background-color: #D1D1D1;
+}
 /*Req 6f*/
-
+tr:hover{
+  background-color: rgb(193, 34, 88, 0.25);
+  filter: alpha(opacity=0.25);
+}
 
 /*Req 7*/
 table{
     border: 2px solid #000000;
+    border-radius: 10px;
+    @media only screen and (min-width: 992px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child{
+    border-top-left-radius: 10px;
+}
 
 /*Add selectors and rules here*/
+thead tr:last-child th:last-child{
+  border-top-right-radius: 10px;
+}
 
+tbody tr:last-child th:first-child{
+  border-bottom-left-radius: 10px;
+}
+
+tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 10px;
+}
 
 /*Req 8*/
 footer{
@@ -89,5 +142,9 @@ footer{
   background:#000000;
   text-align:center;
   color: #FFFFFF;
+  min-height: 75px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
